@@ -1,0 +1,127 @@
+html, body, #container{
+    font-family: 'Fredoka', sans-serif;
+    width: 100%;
+    height: 100%;
+    margin:0;
+    padding:0;
+}
+
+#container{
+    background-image: linear-gradient(45deg, #1159E5 0%, #81A2FF 100%);
+}
+
+.align-items-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login-box{
+    width:800px;
+    height: 500px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 1px #6060607a;
+    display:flex;
+}
+
+#left, #right{
+    width:50%;
+    height: 100%;
+    display: inline-block;
+}
+
+#left{
+    background-image:url("src/bg.png");
+    background-size: 100% 100%;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+#left-text{
+    width: 100%;
+    text-align: center;
+}
+#left-text h1{
+    color:white;
+}
+
+
+#right{
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    padding:1em;
+}
+
+#right-header h1{
+    color: rgb(87 160 255);
+}
+#right-header small{
+    color:#9d9d9d;
+}
+form{
+    width:80%;
+    margin:2em auto;
+    padding:0;
+    display: block;
+}
+.input-login{
+    width: calc(100% - 20px);
+    height: 2.3em;
+    display: block;
+    font-size:1.1em;
+    margin:10px 0;
+    padding:0px 10px;
+    border-radius: 7px;
+    outline:none;
+    border: none;
+    box-shadow: 0px 0px 1px 1px #9d9d9d;
+}
+.input-login:focus{
+    box-shadow: 0px 0px 1px 3px rgba(87, 160, 255, 0.445);
+}
+
+#btn-submit{
+    font-size:1.2em;
+    color:white;
+    display: block;
+    width: 100%;
+    height: 2.1em;
+    padding:0 5px;
+    margin: 1em 0;
+    background-color: #2d92f5;
+    outline:none;
+    border:1px solid #57a0ff;
+    border-radius:3px;
+}
+#btn-submit:hover{
+    background-color:#6cb6ff;
+    cursor:pointer;
+}
+
+.link-box{
+    width:100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.link-box a{
+    color:#9d9d9d;
+}
+
+
+@media(max-width:799px){
+    #login-box{
+        width:100%;
+        height: 100%;
+        border-radius: unset;
+        overflow: hidden;
+    }
+    #left{
+        display: none;
+    }
+    #right{
+        border-radius: unset;
+        width: 100%;
+        height: auto;
+    }
+}
